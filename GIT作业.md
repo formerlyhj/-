@@ -10,7 +10,7 @@
 6、使用ls查看根目录 并且每行显示3个信息  
 ![avatar](https://github.com/formerlyhj/Work/blob/master/Linux%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%87%205.png?raw=true)  
 7、查看所有进程信息,只查看前3行  
-![avatar](https://github.com/formerlyhj/Work/blob/master/Linux%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%87%206.png?raw=true
+![avatar](https://github.com/formerlyhj/Work/blob/master/Linux%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%87%206.png?raw=true)
 8、分析以下问题,并给出解决方案
 Mount is denied because the NTFS volume is already exclusively opened.
 The volume may be already mounted, or another software may use it which could be identified for example by the help of the 'fuser' command.
