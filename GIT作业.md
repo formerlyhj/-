@@ -14,12 +14,12 @@
 8、分析以下问题,并给出解决方案
 Mount is denied because the NTFS volume is already exclusively opened.
 The volume may be already mounted, or another software may use it which could be identified for example by the help of the 'fuser' command.
-有应用程序或者进程正在使用，可以ps –ef查到进程号，用kill杀掉
-9、ssh 服务端口是多少,ssh免密登录方式的原理是什么
-ssh服务端口是22，
--p 22 默认是有的
-ssh免密登录：ssh-keygen生成公匙和私匙，然后本地端和远程端交换公匙和私匙，相当于互相信任，ssh-copy-id
-10、权限755代表什么权限,如果我想把所有的w权限去除应该使用什么命令
-权限755：rwxr-xr-x
-chmod 555 file
+有应用程序或者进程正在使用，可以ps –ef查到进程号，用kill杀掉  
+9、ssh 服务端口是多少,ssh免密登录方式的原理是什么  
+ssh服务端口是22，  
+-p 22 默认是有的  
+ssh免密登录：ssh-keygen生成公匙和私匙，然后本地端和远程端交换  公匙和私匙，相当于互相信任，ssh-copy-id  
+10、权限755代表什么权限,如果我想把所有的w权限去除应该使用什么命令  
+权限755：rwxr-xr-x  
+chmod 555 file  
 
