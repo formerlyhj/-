@@ -1,4 +1,5 @@
 # MySQL考试
+### [试题](https://gitee.com/moist-master/rimi_linux_mysql/blob/master/p1901/sql_exam/sql_exam.md)
 
 ### 第一题
 
