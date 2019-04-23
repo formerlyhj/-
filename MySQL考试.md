@@ -22,6 +22,8 @@ SELECT `name` FROM salesperson WHERE sales_id NOT IN (SELECT sales_id FROM `orde
 ### 第四题
 
 ```
+SELECT DISTINCT a.id,IF(a.p_id IS NULL,'root',IF(b.id is null,'leaf','inner')) type FROM `node` a LEFT JOIN `node` b ON a.id=b.p_id;
+
 ```
 
 ### 第五题
