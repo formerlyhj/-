@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p1901作业</title>
+    <style>
+        .section1 section{
+            color: red;
+            font-weight: bold;
+        }
+        .section{
+            color: yellow;
+        }
+        #section3 p{
+            color: green;
+        }
+        #ho:hover{
+            color: aqua;
+        }
+        ul.a{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        ul.a li{
+            display: inline;
+        }
+        ul.a li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid cadetblue;
+        }
+        ul.a li a:hover{
+            background-color: dodgerblue;
+        }
+        form{
+            border: 1px solid blue;
+            height: 600px;
+            width: 500px;
+            margin: 25px 25px;
+
+        }
+         ul#ul_1{
+            border: 1px solid blue;
+            height: 180px;
+            width: 350px;
+            margin: 0 auto;
+            text-align: center;
+        }
+         ul#ul_2{
+             border: 1px solid blue;
+             height: 250px;
+             width: 350px;
+             margin: 0 auto;
+         }
+        div.form_1{
+            height: 650px;
+            width: 550px;
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<section class="section1">
+    <article>
+        <h1>Docker的应用场景</h1>
+        <section>
+            <p>Web 应用的自动化打包和发布。</p>
+        </section>
+        <section>
+            <p>自动化测试和持续集成、发布。</p>
+        </section>
+        <section style="border: 2px dashed black; width: 400px">
+            <p>在服务型环境中部署和调整数据库或其他的后台应用。</p>
+        </section>
+        <p>从头编译或者扩展现有的OpenShift或Cloud Foundry平台来搭建自己的PaaS环境。</p>
+    </article>
+</section>
+<section id="section3">
+    <article>
+        <header>Docker 的优点</header>
+        <div>
+            <div>
+                <p class="section">
+                    1、简化程序：
+                </p>
+            </div>
+            <p>
+                Docker 让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux
+                机器上，便可以实现虚拟化。Docker改变了虚拟化的方式，使开发者可以直接将自己的成果放入Docker中进行管理。方便快捷已经是 Docker的最大优势，过去需要用数天乃至数周的
+                任务，在Docker容器的处理下，只需要数秒就能完成。
+            </p>
+        </div>
+        <div>
+            <p>
+                2、避免选择恐惧症：
+            </p>
+        </div>
+    </article>
+</section>
+<section>
+    <article>
+        <p>Docker 允许你在容器内运行应用程序， 使用 docker run 命令来在容器内运行一个应用程序。</p>
+        <p id="ho">输出Hello world</p>
+        <pre><code>runoob@runoob:~$ docker run ubuntu:15.10 /bin/echo "Hello world"</code></pre>
+        <div>
+            以上命令完整的意思可以解释为：
+            <div style="display: inline-block">
+                Docker 以 ubuntu15.10 镜像创建一
+            </div>
+            <div style="display: inline-block">
+                个新容器，然后在容器里执行 bin/echo "Hello world"，然后输出结果
+            </div>
+        </div>
+    </article>
+</section>
+<div style="text-align: center">
+    <ul type="none" class="a">
+        <li><a href="#"><</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">></a></li>
+    </ul>
+</div>
+<div class="form_1">
+    <form>
+        <p>已注册用户请登录</p>
+        <ul id="ul_1">
+            <li>
+                <fieldset style="text-align: center">
+                    <legend align="left">用户登录</legend>
+                    用户名：<input type="text" name="name"><br>
+                    密码：<input type="text" name="password">
+                </fieldset>
+            </li>
+        </ul>
+        <p>注册创建账户</p>
+        <ul id="ul_2"></ul>
+
+    </form>
+</div>
+</body>
+</html>
