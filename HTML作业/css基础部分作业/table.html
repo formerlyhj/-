@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.14登录</title>
+
+    <style>
+        #out_border {
+            border: 1px solid #7495a9;
+            width: 550px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .input > input {
+            box-shadow: inset 1px 1px;
+        }
+        button {
+            background-color: #d5eef5;
+            border: 1px solid #7495a9;
+        }
+        section {
+            margin: 0 auto auto auto;
+        }
+        section > div {
+            margin: 10px auto;
+        }
+        section > div:first-child {
+            color: black;
+            font-weight: bolder;
+        }
+        fieldset {
+            border: 1px solid #7495a9;
+        }
+        fieldset legend {
+            border: 1px solid #7495a9;
+            padding: 0 20px;
+            color: #7495a9;
+        }
+        #login div {
+            margin: 10px auto;
+        }
+        #register div {
+            margin: 10px auto;
+        }
+        #s1 {
+            font-weight: bold;
+            color: #7495a9;
+        }
+        #s2 {
+            color: #7495a9;
+        }
+        .form div:first-child {
+            /*background: red;*/
+            width: 390px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="out_border">
+        <section id="form1">
+            <div>已注册用户请登录</div>
+            <div>
+                <fieldset id="login">
+                    <legend>用户登录</legend>
+                    <form class="form">
+                        <div>
+                            <div class="input">
+                                用户名：<input type="text" name="username" autofocus placeholder="请输入用户名" required>
+                            </div>
+                            <div class="input">
+                                　密码：<input type="password" name="password" placeholder="请输入密码" required>
+                            </div>
+                            <div>
+                                <input type="checkbox">记住我
+                                <button type="submit">登录</button>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:;">你忘记密码？</a>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+
+        <section id="form2">
+            <div>注册创建用户</div>
+            <div>
+                <fieldset id="register">
+                    <legend>用户注册</legend>
+                    <div>
+                        <span id="s1">请填写正确的电子邮箱</span>
+                        <span id="s2">在你注册之前请先阅读服务条款</span>
+                    </div>
+                    <form class="form">
+                        <div>
+                            <div class="input">
+                                　用户名：<input type="text" name="username" placeholder="请输入用户名" required>*(请输入6-16个字节)
+                            </div>
+                            <div class="input">
+                                电子邮箱：<input type="email" name="email" placeholder="请输入电子邮箱" required>*
+                            </div>
+                            <div class="input">
+                                　　密码：<input type="password" name="password" placeholder="请输入密码" required>*(最多16个字符)
+                            </div>
+                            <div class="input">
+                                重复密码：<input type="password" name="repasswrod" placeholder="请再次输入密码">
+                            </div>
+                            <div>
+                                同意服务条款
+                                <input type="checkbox" name="agree">
+                                <a href="javascript:;">先看看条款</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit">提交</button>
+                            <button type="reset">重置</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
