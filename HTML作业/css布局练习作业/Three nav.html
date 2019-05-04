@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三级下拉导航</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        #ul1{
+            font-size: 22px;
+        }
+        #ul1 li{
+            background-color: beige;
+            width: 220px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid black;
+            border-radius: 5px;
+
+        }
+        #ul1 li:hover{
+            background-color: cadetblue;
+        }
+        #li1 ul{
+            display: none;
+            position: absolute;
+
+        }
+        #ul2 li{
+            background-color: #8bd400;
+
+        }
+        #ul1 li:hover>ul {
+            display: block;
+        }
+        #li2 ul{
+            display: none;
+            position: absolute;
+        }
+        #ul3:hover{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <ul id="ul1">
+        <li id="li1">章节
+            <ul id="ul2">
+                <li id="li2">python
+                    <ul id="ul3">
+                        <li>GUI</li>
+                        <li>SOCKET</li>
+                        <li>ASYNC</li>
+                    </ul>
+                </li>
+                <li>go</li>
+            </ul>
+        </li>
+        <li>问答</li>
+        <li>笔记</li>
+        <li>提问</li>
+    </ul>
+</div>
+</body>
+</html>
