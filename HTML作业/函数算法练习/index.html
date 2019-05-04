@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL</title>
+</head>
+<body>
+<script>
+    // 返回最出现次数最多的 a和出现次数
+    function max_character(str) {
+        let obj = {};
+        for (let i = 0, l = str.length, k; i < l; i++) {
+            k = str.charAt(i);
+            if (obj[k]) {
+                obj[k]++;
+            } else {
+                obj[k] = 1;
+            }
+        }
+        let m = 0, i = null;
+        for (let k in obj) {
+            if (obj[k] > m) {
+                m = obj[k];
+                i = k;
+            }
+        }
+        console.log(i + ':' + m);
+    }
+
+    let str1 = 'afjghdfraaaasdenas';
+    max_character(str1);
+
+    // 使用二分查找某个数在数组中的位置
+    // let list1 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47];
+
+    // 青蛙跳啊跳
+    function jump(n) {
+        let a = 1;
+        let b = 2;
+        if (n > 2) {
+            for (let i = 1; i <= Math.ceil(n / 2) - 1; i++) {
+                a += b;
+                b += a;
+            }
+        }
+        if (n % 2 === 0) {
+            return b;
+        } else {
+            return a;
+        }
+    }
+
+    let numbers = jump(5);
+    console.log(numbers);
+
+    // 相加算法
+    function f1(list,num) {
+        for (let i in list){
+            for (let j in list){
+                if (i !== j){
+                    if (list[i] + list[j] === num){
+                        console.log([list[i],list[j]]);
+                        return
+                    }
+                }
+            }
+        }
+    }
+    let list1 = [2,11,7,15];
+    f1(list1,13);
+</script>
+</body>
+</html>
