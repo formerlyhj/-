@@ -7,51 +7,44 @@
         ul{
             list-style-type: none;
         }
-        #ul1{
-            font-size: 22px;
-        }
-        #ul1 li{
-            background-color: beige;
-            width: 220px;
+        .ul1 li{
+            background-color: #eeeeee;
+            width: 200px;
             height: 35px;
+            border: 1px solid black;
             text-align: center;
             line-height: 35px;
-            border: 1px solid black;
-            border-radius: 5px;
-
         }
-        #ul1 li:hover{
-            background-color: cadetblue;
+        li:hover{
+            background-color: #7495a9;
         }
-        #li1 ul{
+        .ul2{
             display: none;
             position: absolute;
-
+            left: 211px;
+            top: 16px;
         }
-        #ul2 li{
-            background-color: #8bd400;
-
-        }
-        #ul1 li:hover>ul {
+        .li1:hover .ul2{
             display: block;
         }
-        #li2 ul{
+        .ul3{
             display: none;
             position: absolute;
+            left: 203px;
+            top: 0;
         }
-        #ul3:hover{
+        .li2:hover .ul3{
             display: block;
         }
-
     </style>
 </head>
 <body>
 <div>
-    <ul id="ul1">
-        <li id="li1">章节
-            <ul id="ul2">
-                <li id="li2">python
-                    <ul id="ul3">
+    <ul class="ul1">
+        <li class="li1">章节
+            <ul class="ul2">
+                <li class="li2">python
+                    <ul class="ul3">
                         <li>GUI</li>
                         <li>SOCKET</li>
                         <li>ASYNC</li>
